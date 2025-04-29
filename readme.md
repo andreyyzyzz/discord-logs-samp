@@ -63,7 +63,7 @@ Edite as definições dos canais no início do arquivo para corresponder aos IDs
 MIT
 
 
-| Comando | ![Exemplo Ban](https://cdn.discordapp.com/attachments/1234336747861577810/1366658623681593364/image.png?ex=6811bf87&is=68106e07&hm=8ed9d6a130fee89257f505bf33298515a5ea1f48c00b9393fa6784ed94594c66&) |
+| Logs Gerais | ![aa Ban](https://cdn.discordapp.com/attachments/1234336747861577810/1366658623681593364/image.png?ex=6811bf87&is=68106e07&hm=8ed9d6a130fee89257f505bf33298515a5ea1f48c00b9393fa6784ed94594c66&) |
 |---------|-----------|
 | `/ban`  | ![Exemplo Ban](https://cdn.discordapp.com/attachments/1234336747861577810/1366658623681593364/image.png?ex=6811bf87&is=68106e07&hm=8ed9d6a130fee89257f505bf33298515a5ea1f48c00b9393fa6784ed94594c66&) |
 | `/doar` | ![Exemplo Doação](./images/doar-example.png) |
