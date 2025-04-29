@@ -62,13 +62,13 @@ Edite as definições dos canais no início do arquivo para corresponder aos IDs
 
 MIT
 
-| `Logs Gerais` | ![Discord Banner](./screens/logs-gerais.png)
+![Discord Banner](./screens/logs-gerais.png)
 
 
-| `Logs Gerais` | ![Discord Banner](./screens/punicoes.png)
+![Discord Banner](./screens/punicoes.png)
 
 
-| `Logs Gerais` | ![Discord Banner](./screens/item.png)
+![Discord Banner](./screens/item.png)
 
 
-| `Logs Gerais` | ![Discord Banner](./screens/money.png)
+![Discord Banner](./screens/money.png)
