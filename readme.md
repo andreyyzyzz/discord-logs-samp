@@ -55,7 +55,7 @@ Edite as definições dos canais no início do arquivo para corresponder aos IDs
 
 ## Créditos
 
-- Desenvolvido por [Seu Nome] (@seuNome)
+- Desenvolvido por Andrey (quiksilveR) 842x (Discord User)
 - Contribuições de Claude (@anthropic)
 
 ## Licença
