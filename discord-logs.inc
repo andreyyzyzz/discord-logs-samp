@@ -10,25 +10,21 @@
     Data: 29/04/2025
 */
 
-#if defined _discord_logs_included
-    #endinput
-#endif
-#define _discord_logs_included
+#include <YSI_Coding\y_hooks>
+#include <discord-connector>
+#include <discord-cmd>
 
-// Verificar se discord-connector está incluído
-#if !defined dcconnector_included
-    #error "Este include requer discord-connector (github.com/maddinat0r/samp-discord-connector)"
-#endif
-
-#include <YSI_Coding\y_hooks>	// Caso for usar como modulo
-
+//==========================================================================
+// CONFIGURACAO DO SERVIDOR
+//==========================================================================
 // Identificacao do Servidor
-#define NAME                        "quiksilveR RP/G" // Nome curto do Servidor
+#define NAME                        "quiksilveR" // Nome curto do Servidor
 
-// Canais do Discord (substitua pelos IDs reais)
-#define CANAL_LOGS           "1234567890123456789" // ID do canal para logs gerais
+// IDs de Canais no Discord
+#define CANAL_LOGS                  "1365791603737759866"   // Canal de Logs
 #define CANAL_PUNICOES       "1234567890123456789" // ID do canal para punições
 #define CANAL_AGENDAMENTOS   "1234567890123456789" // ID do canal para agendamentos
+
 
 /**
  * Funcao para enviar logs formatados para um canal do Discord.
@@ -252,5 +248,57 @@ stock SendScheduleLog(const channelId[], const adminName[], const targetName[], 
         
     DCC_SendChannelEmbedMessage(channel, embed);
     
+    return 1;
+}
+
+//==========================================================================
+// COMANDOS DO DISCORD
+//==========================================================================
+
+DCMD:testarlogs1(user, canal, params[])
+{
+    new msg[256];
+    format(msg, sizeof(msg), "O admin usou o comando %s para fazer %s", "/rg", "para abrir o rg");
+
+    SendDiscordLog(
+    "Logs Gerais", // Titulo do embed (opcional)
+    CANAL_LOGS,  // ID do canal
+    "quiksilveR",          // Nome do usuario que executou a acao
+    "Comandos",             // Tipo de acao
+    msg
+    /*"O admin usou o comando %s para fazer %s", // Formato da descricao
+    "/rg",          // Parâmetro 1 para formatacao
+    "para abrir o rg"     // Parâmetro 2 para formatacao*/
+    );
+
+    SendPunishmentLog(
+    CANAL_PUNICOES, // ID do canal
+    "quiksilveR",         // Nome do admin
+    "Jogador_Punido",      // Nome do jogador punido
+    "Cadeia",              // Tipo de punicao
+    "Desobedeceu regras",  // Motivo
+    30,                    // Duracao em minutos
+    2                      // Quantidade de avisos
+    );
+
+    SendScheduleLog(
+    CANAL_AGENDAMENTOS, // ID do canal
+    "quiksilveR",         // Nome do admin
+    "Jogador_Alvo",        // Nome do jogador alvo
+    "Item",                // Tipo de agendamento
+    522,                   // ID do item
+    5,                     // Quantidade
+    "Compensacao por bug"  // Motivo (opcional)
+    );
+
+    SendScheduleLog(
+    CANAL_AGENDAMENTOS, // ID do canal
+    "quiksilveR",         // Nome do admin
+    "Jogador_Alvo",        // Nome do jogador alvo
+    "Dinheiro",            // Tipo de agendamento
+    0,                     // ID do item (0 para dinheiro)
+    50000,                 // Valor do dinheiro
+    "Prêmio por evento"    // Motivo (opcional)
+    );
     return 1;
 }
