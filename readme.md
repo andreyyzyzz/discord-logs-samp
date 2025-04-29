@@ -23,6 +23,19 @@ Um sistema completo de logs via Discord para servidores SA-MP, fornecendo funç�
 3. Inclua o arquivo principal usando `#include <discord_logs>` no seu script
 4. Configure os IDs dos canais Discord nas definições
 
+## Imagens
+
+![Discord Banner](./screens/logs-gerais.png)
+
+
+![Discord Banner](./screens/punicoes.png)
+
+
+![Discord Banner](./screens/item.png)
+
+
+![Discord Banner](./screens/money.png)
+
 ## Uso
 
 ### Log Geral
@@ -61,14 +74,3 @@ Edite as definições dos canais no início do arquivo para corresponder aos IDs
 ## Licença
 
 MIT
-
-![Discord Banner](./screens/logs-gerais.png)
-
-
-![Discord Banner](./screens/punicoes.png)
-
-
-![Discord Banner](./screens/item.png)
-
-
-![Discord Banner](./screens/money.png)
