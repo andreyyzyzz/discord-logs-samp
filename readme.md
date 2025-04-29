@@ -63,8 +63,8 @@ Edite as definições dos canais no início do arquivo para corresponder aos IDs
 MIT
 
 
-| `Logs Gerais` | ![Discord Banner](./screens/logs-gerais.png) |
+![Discord Banner](./screens/logs-gerais.png) |
 
-| `Punições`  | ![Discord Banner](./screens/punicoes.png) |
-| `Agendamaneto de Itens` | ![Discord Banner](./screens/item.png) |
-| `Agendamaneto de Dinheiro` | ![Discord Banner](./screens/money.png) |
+![Discord Banner](./screens/punicoes.png) |
+![Discord Banner](./screens/item.png) |
+![Discord Banner](./screens/money.png) |
